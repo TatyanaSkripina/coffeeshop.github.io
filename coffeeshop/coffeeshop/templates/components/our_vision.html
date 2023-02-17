@@ -1,0 +1,96 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>
+        {% block title %}
+        {{ title }}
+        {% endblock title %}
+    </title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free Website Template" name="keywords">
+    <meta content="Free Website Template" name="description">
+
+    <!-- Favicon -->
+    <link href="{% static 'store/img/favicon.ico' %}" rel="icon">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Roboto:wght@400;500;700&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="{% static 'store/lib/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+    <link href="{% static 'store/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css' %}" rel="stylesheet"/>
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="{% static 'store/css/style.min.css' %}" rel="stylesheet">
+</head>
+
+<body>
+{% include 'components/_navbar.html' %}
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+
+{% block main %}
+<div class="d-flex justify-content-between">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <h2 class="fst-italic">Распространение</h2>
+                <p class="fst-italic">Первая точка Starbucks за пределами северной Америки была открыта в 1996 году в
+                    Токио (Япония). В 1998 году Starbucks вышла на британский рынок, вложив 83 млн долларов и приобрела
+                    кофейную компанию Сиэтла (Seattle Coffee Company) размещённую в Великобритании с 56 точками. В
+                    сентябре 2002 года Starbucks открыла свой первый магазин в Латинской Америке (Мехико). В настоящее
+                    время в Мексике находится уже 250 точек, в самом Мехико около сотни.
+
+                    В 1990-х годах Starbucks открывала новый магазин каждый рабочий день, удерживая такой темп до начала
+                    2000-х годов.
+
+                    В 1999 году Starbucks в порядке эксперимента открыла несколько кафе (т. н. цепь Circadia) в
+                    Сан-Франциско. Эти заведения скоро были «выключены» из числа заведений Starbucks и преобразованы в
+                    кафе Starbucks.
+
+                    В октябре 2002 года Starbucks учредила компанию по продаже кофе в Лозанне (Швейцария) с целью
+                    управления покупками зелёного кофе. Весь остальной бизнес, связанный с кофе, по-прежнему управлялся
+                    из Сиэтла.
+
+                    В апреле 2003 года Starbucks за 72 млн долларов приобрела компании Seattle’s Best Coffee и
+                    Torrefazione Italia у компании AFC Enterprises. Сделка дала Starbucks 150 новых точек, но, согласно
+                    газете Seattle Post-Intelligencer, весь бизнес был гораздо более значительным. В сентябре 2006 года
+                    компания-конкурент Diedrich Coffee объявила, что продаст большую часть своих магазинов компании
+                    Starbucks. В список входили точки, входящие в цепь Coffee People и находившиеся в штате Орегон.
+                    Starbucks приняла точки Diedrich Coffee и Coffee People под свой бренд, но в сделку не вошли точки
+                    Coffee People, находящиеся в аэропорту Портленда.
+
+                    В мае 2018 года Starbucks договорились с Nestle о сделке на сумму около 7,15 млрд долларов. Контракт
+                    предусматривал получение компанией Nestle прав на бессрочную продажу продукции брендов Starbucks,
+                    Seattle’s Best Coffee и Teavana TM/MC. 28 августа того же года компании закрыли сделку по передаче
+                    лицензии[5][6].
+
+                    В марте 2019 года руководство компании Starbucks приняло решение инвестировать 100 млн $ в фонд
+                    Valor Siren Ventures Fund, который займется поддержкой компаний, развивающих новые технологии в
+                    области производства пищевых продуктов и ритейла. Руководство компании рассчитывает, что уже в
+                    ближайшее время фонду удастся привлечь дополнительные 300 млн $ инвестиций, которые в дальнейшем
+                    будут направлены на поддержку находчивых и креативных бизнесменов.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-3">
+
+    </div>
+
+</div>
+
+{% endblock main %}
+
+</body>
+
+</html>
+
+
